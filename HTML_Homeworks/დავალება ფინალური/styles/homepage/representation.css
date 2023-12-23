@@ -1,0 +1,152 @@
+.representation-section{
+    width: 100%;
+    min-height: 150vh;
+    background-color: rgb(0, 215, 193);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+
+.contact-wrap{
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-info-wrap{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.contact-info-wrap > pre{
+    line-height: 30px;
+    font-weight: 100;
+}
+.icon-info-wrap{
+    display: flex;
+    gap: 20px;
+}
+.icon-info-wrap > a{
+    font-size: 1.5rem;
+    color: black;
+}
+
+.send-main-info-wrap{
+    display: flex;
+    gap: 30px;
+}
+
+.input{
+    width: 250px;
+    height: 35px;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid black;
+    padding-left: 10px;
+    font-size: medium;
+}
+.input:hover{
+    border: 2px solid black;
+}
+.input:focus{
+    border: 2px solid black;
+}
+.input:invalid{
+    background-color: #fff;
+    border: 2px solid red;
+}
+.input:focus:invalid{
+    background-color: #fff;
+    border: 2px solid red;
+}
+
+.firstName-email-wrap{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.lastName-subject-wrap{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.textarea-wrap{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+.textarea-wrap > textarea{
+    height: 100px;
+    resize: none;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: medium;
+}
+.textarea-wrap > textarea:hover{
+    border: 2px solid black;
+}
+.textarea-wrap > textarea:focus{
+    border: 2px solid black;
+}
+
+.textarea-wrap > button{
+    width: 150px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    outline: none;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.textarea-wrap > button:hover{
+    background-color: transparent;
+    color: black;
+}
+
+@media screen and (max-width: 1068px){
+    .representation-section{
+        height: 100vh;
+    }
+    .send-main-info-wrap{
+        margin-top: 70px;
+    }
+
+
+    .contact-wrap{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 648px){
+    .representation-section{
+        min-height: 160vh;
+    }
+    .send-main-info-wrap{
+        margin-top: 70px;
+        display: block;
+    }
+    .lastName-subject-wrap{
+        margin-top: 20px;
+    }
+
+    .input{
+        width: 400px;
+    }
+
+}
+
+@media screen and (max-width: 482px){
+    .input{
+        width: 300px;
+    }
+}

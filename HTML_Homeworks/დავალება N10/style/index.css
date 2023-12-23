@@ -1,0 +1,128 @@
+body{
+    --borderInput: 5px;
+    --inputColor: rgba(255, 255, 255, 0.497);
+    --fontSize: x-large;
+}
+.content-container{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-form{
+    width: 70%;
+    height: 60%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact-info-title{
+    width: 100%;
+    border-radius: var(--borderInput);
+    text-align: center;
+    background-color: var(--inputColor);
+}
+
+.contact-data{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-container{
+    width: 100%;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+}
+.input{
+    box-sizing: border-box;
+    width: 95%;
+    height: 50px;
+    padding-left: 20px;
+    outline: none;
+    border: none;
+    font-size: var(--fontSize);
+    border-radius: var(--borderInput);
+    background-color: var(--inputColor);
+}
+.input::placeholder{
+    color: rgba(0, 0, 0, 0.737);
+}
+input:required:focus:invalid{
+    background: url("https://assets.digitalocean.com/labs/icons/exclamation-triangle-fill.svg") no-repeat 95% 50% rgba(238, 144, 144, 0.541);
+    background-size: 25px;
+}
+input:required:focus:valid {
+    background: url("https://assets.digitalocean.com/labs/icons/hand-thumbs-up.svg") no-repeat 95% 50% rgba(178, 255, 178, 0.536);
+    background-size: 25px;
+}
+
+.message-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    
+}
+
+.textarea{
+    box-sizing: border-box;
+    width: 100%;
+    height: 195px;
+    padding: 20px;
+    outline: none;
+    border: none;
+    border-radius: var(--borderInput);
+    background-color: var(--inputColor);
+    font-size: var(--fontSize);
+}
+.textarea::placeholder{
+    color: rgba(0, 0, 0, 0.737);
+}
+
+.button{
+    width: 150px;
+    height: 60px;
+    padding: 0;
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.504);
+    font-size: var(--fontSize);
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1466px){
+    .contact-data{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .input-container{
+        align-items: center;
+    }
+    .input{
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .message-container{
+        align-items: center;
+    }
+    .button{
+        width: 100%;
+    }
+}

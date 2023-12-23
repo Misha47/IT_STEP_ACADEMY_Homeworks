@@ -1,0 +1,32 @@
+.content-wrapper{
+    position: absolute;
+    width: 90%;
+    height: 900px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid black;
+    margin-top: 2rem;
+    padding: 10px;
+}
+
+.img01{
+    float: left;
+    margin-right: 10px;
+    border: 4px double black;
+}
+.img02{
+    float: right;
+    margin-left: 10px;
+    border: 4px double black;
+}
+.plain-text{
+    color: white;
+    text-shadow: 0 0 5px black;
+}
+
+.expensive-cats-title{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 50px;
+}

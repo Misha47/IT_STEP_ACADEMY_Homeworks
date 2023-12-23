@@ -1,0 +1,44 @@
+.header-navbar{
+    background-color: #526D82;
+}
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.input-navbar{
+    outline: none;
+    width: 40%;
+    height: 40px;
+    border: 1px solid black;
+    border-top-left-radius: 25px;
+    border-right: none;
+    padding-left: 20px;
+    font-size: large;
+}
+.submit-btn{
+    height: 43px;
+    width: 80px;
+    border: 1px solid black;
+    border-bottom-right-radius: 25px;
+    font-size: large;
+    text-align: center;
+    text-shadow: 0 0 10px gold;
+    background-color: rgb(105, 105, 145);
+}
+.nav-link{
+    display: flex;
+    list-style-type: none;
+    padding: 20px;
+}
+.inner-nav-link{
+    text-decoration: none;
+    color: #9DB2BF;
+    text-shadow: 0 0 2px 1px #27374D;
+    transition: 1s;
+}
+.inner-nav-link:active{
+    color:rgb(88, 88, 88);
+    text-shadow: 0 0 10px gold;
+    transform: scale(1.2);
+}

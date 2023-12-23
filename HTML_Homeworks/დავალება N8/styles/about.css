@@ -1,0 +1,19 @@
+.about-section{
+    margin: auto;
+    width: 90%;
+    height: 60vh;
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+    padding-inline: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    backdrop-filter: blur(1px);
+    border: 1px outset black;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.179);
+    color: white;
+    text-shadow: 0 0 2px black;
+    font-weight:700;
+}

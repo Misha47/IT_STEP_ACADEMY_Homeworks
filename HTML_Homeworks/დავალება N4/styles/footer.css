@@ -1,0 +1,13 @@
+.web-footer{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 700px;
+    padding: 20px;
+    background-color: #27374D;
+    color: #9DB2BF;
+    font-size: large;
+
+}

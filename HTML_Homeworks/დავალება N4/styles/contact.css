@@ -1,0 +1,29 @@
+.contact-article{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 70px;
+    border: 2px ridge #27374D;
+    background-color: #9DB2BF;
+    box-shadow: 0 0 3px #27374D;
+    padding: 20px;
+    animation-name: opacitian;
+    animation-duration: 2s;
+}
+.info-wrapper{
+    display: flex;
+    align-items: center;
+}
+.info-wrapper svg{
+    margin-right: 20px;
+}
+
+.info-text{
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.contact-link-logo{
+    margin-top: 2rem;
+    margin-right: 4rem;
+}

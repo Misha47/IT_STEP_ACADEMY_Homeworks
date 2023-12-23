@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Misha's First Exercise</title>
+</head>
+<body>
+    <div class="lesson-wrapper">
+
+        <p class="first-lesson"><i>დავალება</i> <b>N1</b></p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="title-wrapper">
+            <h1>სათაური N1</h1>
+            <h2>სათაური N2</h2>
+            <h3>სათაური N3</h3>
+            <h4>სათაური N4</h4>
+            <h5>სათაური N5</h5>
+            <h6>სათაური N6</h6>
+        </div>
+        <br>
+        <hr>
+        <hr>
+        <br>
+        <div class="link-wrapper">
+            <a class="link" href="https://www.facebook.com">ლინკი (იხსნება საიტი არსებულ გვერდზე)</a>
+            <br>
+            <br>
+            <a class="link" target="_blank" href="https://www.facebook.com">ლინკი(ხსნის საიტს ახალ გვერდზე)</a>
+            <br>
+            <br>
+            <a href="./second_page/second.html" target="_blank">ლოკალური(დირექტორიის ან ფაილის) მისამართის ლინკი</a>
+        </div>
+        <br>
+        <hr>
+        <div class="img-wrapper" style="text-align: center;">
+            <h3>სურათი ლოკალური მისამართით</h3>
+            <img src="./images/image01.jpg" width="300px" style="border: 3px double black;">
+            <br>
+            <br>
+            <hr>
+            <h3>სურათი რომელიც ქსელშია ატვირთული</h3>
+            <img src="https://dafq4moetmy65.cloudfront.net/cdn/ff/LzGjnJWPkD_pGt5cBAZh5aOu3vDDzKOQTy3vwOT7VPQ/1502708861/public/styles/service_detail_banner_style/public/2017-08/Angular_0.png?itok=S4neG6kk" width="300px" style="border: 2px double black;">
+            <br>
+        </div>
+        <br>
+        <hr>
+        <hr>
+        <div class="list-wrapper">
+            <h3>დანომრილი სია</h3>
+            <ol>
+                <li>პირველი</li>
+                <li>მეორე</li>
+                <li>მესამე</li>
+                <li>მეოთხე</li>
+                <li>მეხუთე</li>
+            </ol>
+            <p>დანომრილი სიები იქმნება <b>ol</b> თეგით. მისი თითოეული შვილი(Child) ელემენტია li თეგი .  
+                <b>ol</b> თეგს გადაეცემა რამოდენიმე ატრიბუტი:
+            </p>
+            <br>
+            <hr>
+            <b>type ატრიბუტი რომელიც ადგენს დანომრვის წესებს. type-ს 
+                მნიშვნელობებია:
+            </b>
+            <br>
+            <br>
+            <p>1) 1: ციფრებით დანომრა</p>
+            <p>2) A: მაღალი რეგისტრის ლათინური ასოებით დანომვრა</p>
+            <p>3) a: დაბალი რეგისტრის ლათინური ასოებით დანომვრა</p>
+            <p>4) I: მაღალი რეგისტრის რომაული ასოებით დანომვრა</p>
+            <p>5) i: დაბალი რეგისტრის რომაული ასოებით დანომვრა</p>
+            <br>
+            <hr>
+            <b>reverse ატრიბუტი, რომლითაც ხდება სიის უკუღმა გადანომვრა</b>
+            <p><<//""><b>ol</b> reverse><<//"">/<b>ol</b>></p>
+            <br>
+            <hr>
+            <b>start ატრიბუტი, რომელიც განსხაზღვრავს თუ რომელი რიცხვიდან დაიწყოს სიის დანომვრა</b>
+            <p><<//""><b>ol</b> start="5">დანომვრა დაიწყება 5-დან<<//"">/<b>ol</b>></p>
+            <br>
+            <hr>
+        </div>
+    </div>
+    <style>
+        .list-wrapper{
+            padding: 20px;
+        }
+        .lesson-wrapper{
+            width: 90%;
+            left: -5%;
+            transform: translate(5%, 0);
+            border: 1px solid black;
+        }
+        .first-lesson{
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 0);
+            font-size: xx-large;
+        }
+        .title-wrapper{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+        .link-wrapper{
+            text-align: center;
+        }
+    </style>
+</body>
+</html>

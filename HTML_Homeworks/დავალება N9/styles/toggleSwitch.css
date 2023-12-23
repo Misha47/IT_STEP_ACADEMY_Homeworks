@@ -1,0 +1,32 @@
+.animeToggleButton{
+    position: relative;
+    width:150px;
+    height: 70px;
+    border-radius: 35px;
+    display: block;
+    background-color: rgb(90, 0, 0);
+}
+.animeToggleButton:before{
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 100%;
+    border-radius: 35px;
+    left: 0;
+    background-color: red;
+    transition: 0.4s;
+
+}
+
+.animeToggleCheckbox:checked + .animeToggleButton{
+    background-color: rgb(0, 54, 0);
+}
+
+.animeToggleCheckbox:checked + .animeToggleButton:before{
+    left: 100%;
+    transform: translateX(-100%);
+    background-color: green;
+}
+.animeToggleButton:active:before{
+    width: 100px;
+}

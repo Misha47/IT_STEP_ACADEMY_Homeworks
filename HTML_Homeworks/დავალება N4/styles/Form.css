@@ -1,0 +1,177 @@
+body{
+    background-color: #9DB2BF;
+}
+
+.web-form{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 4.3rem;
+    border: 2px ridge #27374D;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #9DB2BF;
+    box-shadow: 0 0 3px #27374D;
+    animation-name: opacitian;
+    animation-duration: 2s;
+}
+.register-title{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 1rem;
+    font-size: 3rem;
+    color: #9DB2BF;
+    font-family: alkdots;
+    font-weight: bolder;
+    letter-spacing: -4px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #27374D;
+    text-shadow: -0 0 10px #27374D;
+    animation-name: opacitian;
+    animation-duration: 2s;
+}
+.data-wrapper{
+    width: 25rem;
+    height: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.input-item{
+    position: fixed;
+    width: 25rem;
+    height: 2.5rem;
+    margin-top: 20px;
+    outline: none;
+    border: 2px solid #27374D;
+    background-color: transparent;
+    color: #27374D;
+    border-radius: 5px;
+    font-size: x-large;
+}
+
+.label-item, .label-item:link{
+    position: fixed;
+    color: #27374D;
+    margin-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 0;
+    height: 0;
+    font-size: larger;
+    inline-size: 150px;
+    transition: 0.4s;
+}
+.data-wrapper input:focus ~ label,.data-wrapper input:valid ~ label{
+    height: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: small;
+    width: fit-content;
+    border-left: 4px double #27374D;
+    border-right: 4px double #27374D;
+    border-radius: 5px;
+    background-color: #9DB2BF;
+
+}
+
+.sex-wrapper{
+    margin-top: 20px;
+}
+
+.sex-wrapper label{
+    color: #27374D;
+    display: inline;
+    font-size: medium;
+    cursor: pointer;
+}
+
+/* ვაკანსიის არჩევის სტილები */
+.vacancy-wrapper{
+    width: 30rem;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px double #27374D;
+}
+.vacancy-accordion{
+    display:none;
+}
+.accordion-label{
+    font-size: larger;
+    color: #27374D;
+    display: static;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.accordion-label:active{
+    color:rgb(192, 192, 192);
+    text-shadow: 0 0 5px gold;
+}
+
+.vacancy-accordion + .vacancy-selector{
+    display: none;
+}
+.vacancy-accordion:checked + .vacancy-selector{
+    display: flex;
+    outline: none;
+    padding: 10px;
+    box-shadow: 0 0 10px black inset;
+}
+.vacancy-selector label{
+    color: #27374D;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #526D82;
+    font-family: avengers;
+    font-size: small;
+}
+input[type="checkbox"]{
+    margin-left: 15px;
+}
+
+/* Additional Styles */
+
+.additional-wrapper{
+    display: contents;
+}
+.additional-label{
+    display: block;
+    font-size: larger;
+    text-align: center;
+    inline-size: 700px;
+    color: #27374D;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.additional-label:active{
+    color:rgb(192, 192, 192);
+    text-shadow: 0 0 5px gold;
+}
+.additional-textarea{
+    display: none;
+}
+.additional-input:checked + .additional-textarea{
+    display: block;
+    width: 30rem;
+    height: 5rem;
+    outline: none;
+    background-color: #DDE6ED;
+    resize: none;
+}
+
+
+.submit-form{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 25rem;
+    height: 4rem;
+    color: #DDE6ED;
+    background-color: #526D82;
+    border: 1px solid #27374D;
+    font-size: larger;
+}

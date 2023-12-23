@@ -1,0 +1,99 @@
+*{
+    text-align: center;
+}
+body{
+    background-color: var(--main-clr);
+}
+pre{
+    text-wrap: wrap;
+}
+.general-style{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    margin-bottom: 100px;
+    padding-bottom: 100px;
+    padding-inline: 50px;
+    border-bottom: 2px solid black;
+}
+.resume-section{
+    width: 100%;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.resume-wrap{
+    background-color: var(--main-clr);
+    margin-bottom: 80px;
+    margin-top: 80px;
+}
+.resume-title-text{
+    font-size: 2rem;
+    letter-spacing: 10px;
+    text-align: center;
+    font-weight: 800;
+}
+
+.about-wrap{
+    gap: 40px;
+}
+
+.experience-inner{
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+}
+.experience-inner > div{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.training-workshop-wrapper{
+    gap: 50px;
+}
+
+.special-skills-wrapper{
+    gap: 50px;
+}
+
+
+.download-resume-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.download-resume-wrapper > a{
+    padding-inline: 70px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: black;
+    margin-bottom: 60px;
+    text-decoration: none;
+    color: white;
+    border: 2px solid black;
+    transition: 0.5s;
+}
+
+.download-resume-wrapper > a:hover{
+    background-color: transparent;
+}
+
+
+@media screen and (max-width: 872px){
+    .general-style{
+        padding-inline: 0;
+    }
+    .experience-inner{
+        display: block;
+    }
+    .resume-title-text{
+        font-size: 1rem;
+        letter-spacing: 5px;
+        text-align: center;
+        font-weight: 800;
+    }
+}

@@ -1,0 +1,83 @@
+.about-section{
+    padding-top: 60px;
+    background-color: var(--main-clr);
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: end;
+}
+.aboutme-wrap{
+    display: flex;
+    justify-content: center;
+}
+
+.about-text-wrap > h2{
+    margin-top: 60px;
+    font-size: 4rem;
+    font-weight: bold;
+    letter-spacing: 10px;
+    margin-bottom: 60px;
+}
+
+.about-text-wrap > pre{
+    letter-spacing: 2px;
+    line-height: 30px;
+}
+
+.about-text-wrap > button{
+    width: 150px;
+    height: 50px;
+    background-color: black;
+    margin-bottom: 60px;
+    color: white;
+    outline: none;
+    border: 2px solid black;
+    transition: 0.5s;
+}
+
+.about-text-wrap > button:hover{
+    background-color: transparent;
+}
+
+.about-text-wrap > button > a{
+    text-decoration: none;
+    color: white;
+}
+.about-text-wrap > button:hover > a{
+    color: black;
+}
+
+
+@media screen and (max-width: 1169px){
+    .aboutme-wrap{
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-text-wrap > button{
+        margin-bottom: 60px;
+    }
+}
+
+@media screen and (max-width: 648px){
+    .aboutme-wrap > img{
+        width: 500px;
+    }
+    
+
+    .about-text-wrap > h2{
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 482px){
+    .aboutme-wrap > img{
+        width: 400px;
+    }
+
+    .about-text-wrap > h2{
+        font-size: 2rem;
+    }
+    .about-text-wrap > pre{
+        font-size: small;
+    }
+}

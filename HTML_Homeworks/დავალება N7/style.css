@@ -1,0 +1,165 @@
+
+*{
+    --bg: rgb(26, 26, 26);
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg);
+}
+.contact-info-ul{
+    position: relative;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+.contact-info-ul li{
+    position: relative;
+    list-style: none;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.contact-info-ul li:before{
+    content: '';
+    position: absolute;
+    inset: 20px;
+    box-shadow: 0 0 0 15px var(--clr),
+    0 0 0 22px var(--bg),
+    0 0 0 24px var(--clr);
+    transition: 0.5s;
+}
+.contact-info-ul li:after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--bg);
+    transform: rotate(45deg) scale(1.2);
+    transition: 0.5s;
+}
+
+.contact-info-ul li a{
+    position: relative;
+    text-decoration: none;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-info-ul li a i{
+    font-size: 2em;
+    color: var(--clr);
+    transition: 0.5s;
+}
+.contact-info-ul li a span{
+    position: absolute;
+    opacity: 0;
+    color: var(--clr);
+    transform: scale(0) translateY(50%);
+    transition: 0.5s;
+}
+.contact-info-ul li:hover a i{
+    transform: translateY(0%);
+}
+.contact-info-ul li:hover a span{
+    opacity: 0;
+}
+.contact-info-ul li:hover a span, .contact-info-ul li:hover a i{
+    filter: drop-shadow(0 0 20px var(--clr))
+    drop-shadow(0 0 40px var(--clr))
+    drop-shadow(0 0 60px var(--clr))
+
+}
+
+
+
+
+.li-01:hover:before{
+    inset: 0;
+    transform: scale(0)
+}
+.li-01:hover:after{
+    transform: scale(1.3);
+    border-radius: 50%;
+    border: 3px double var(--clr);
+}
+.li-01:hover a i{
+    font-size: 3rem;
+    transform: scale(1.5);
+}
+
+
+.contact-info-ul .li-02:before{
+    transition: 1s;
+}
+.contact-info-ul .li-02:after{
+    transition: 0.5s;
+}
+.contact-info-ul .li-02:hover a i{
+    filter: none;
+    transform: scale(4);
+    transition: 1s;
+}
+.li-02:hover:before{
+    inset: 5px;
+    scale: 0;
+    transform: rotate(180deg)
+}
+.li-02:hover:after{
+    transform: rotate(180deg) scale(0)
+}
+
+
+.li-03:hover:before{
+    inset: 11px;
+    transform: rotate(-180deg);
+    transform: scale(1.1);
+}
+.li-03:hover:after{
+    transform: rotate(180deg) scale(1.1);
+}
+.contact-info-ul .li-03:hover a i{
+    transform: scale(1.3);
+    filter: drop-shadow(0 0 30px #fff)
+    drop-shadow(0 0 30px #fff)
+    drop-shadow(0 0 30px #fff)
+    ;
+}
+
+
+.li-04:hover:before{
+    transform: scale(1.3);
+}
+.li-04:hover:after{
+    transform: rotate(45deg) scale(1.5);
+}
+.contact-info-ul .li-04 a i{
+    transition: 1s;
+}
+.contact-info-ul .li-04:hover a i{
+    transform: scale(1.8);
+}
+
+.li-05:hover:before{
+    inset: 10px;
+    border-radius: 10%;
+    box-shadow: 0 0 0 24px var(--clr);
+}
+.li-05:hover:after{
+    border-radius: 50%;
+    transform: scale(0.1);
+}
+
+.contact-info-ul .li-05:hover a i{
+    transform: scale(2)
+}

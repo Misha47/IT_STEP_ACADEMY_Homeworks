@@ -1,0 +1,33 @@
+.web-title{
+    color: white;
+}
+.nav-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(58, 58, 87);
+}
+.nav-items{
+    display: flex;
+    list-style-type: none;
+    background-color: rgb(58, 58, 87);
+}
+.nav-item{
+    margin: 2rem;
+    background-color: rgb(58, 58, 87);
+}
+.nav-link{
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+    padding: 20px;
+}
+.nav-link:hover{
+    color:rgb(132, 195, 195);
+    text-shadow: 0 0 10px gold;
+    border-bottom: 2px solid rgb(34, 34, 34);
+    border-radius: 25%;
+}
+.nav-link:active{
+    color: rgb(221, 214, 172);
+}

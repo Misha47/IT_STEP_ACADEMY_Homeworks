@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/navigation.css">
+    <link rel="stylesheet" href="../styles/order.css">
+    <link rel="stylesheet" href="../styles/toggleSwitch.css">
+    <title>Document</title>
+</head>
+<body style="box-sizing: border-box;margin: 0;padding: 0;">
+    <header class="web-main-header">
+        <a href="../index.html" class="web-title">
+            <h1 style="margin: 0;">ბურგერ</h1>
+            <img src="../assets/LOGO/sea.png" width="100px">
+        </a>
+        <nav class="web-header-nav">
+            <label class="hamburger-menu" for="hamburger-menu">
+                <input type="checkbox" id="hamburger-menu">
+            </label>
+            <ul class="web-nav-ul">
+                <li class="nav-item-li"><a class="nav-link" href="../index.html">მთავარი</a></li>
+                <li class="nav-item-li"><a class="nav-link" href="./order.html">შეკვეთა</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="order-first-section">
+        <label for="chooseFromMenuButton" class="order-button-label choose-from-menu">
+            <span>აირჩიე მენიუდან</span>
+            <input type="checkbox" id="chooseFromMenuButton">
+        </label>
+        <div class="order-menu choose-from-menu-container">
+            <div class="card-wrapper">
+                <div class="img-wrapper">
+                    <img src="../assets/textures/hamburgers/big-mac.png">
+                    <h2>ბიგ მაკი</h2>
+                </div>
+                <div>
+                    <input class="animeToggleCheckbox" type="checkbox" id="animeToggleButton" style="display: none;">
+                    <label for="animeToggleButton" class="animeToggleButton"></label>
+                </div>
+            </div>
+
+            <div class="card-wrapper">
+                <div class="img-wrapper">
+                    <img src="../assets/textures/hamburgers/burger-shark-bear.png">
+                    <h2>ბურგერ შარქ ბეარი</h2>
+                </div>
+                <div>
+                    <input class="animeToggleCheckbox" type="checkbox" id="animeToggleButton2" style="display: none;">
+                    <label for="animeToggleButton2" class="animeToggleButton"></label>
+                </div>
+            </div>
+
+            <div class="card-wrapper">
+                <div class="img-wrapper">
+                    <img src="../assets/textures/hamburgers/burger-shark-massive.png">
+                    <h2>ბურგერ შარქ მასივი</h2>
+                </div>
+                <div>
+                    <input class="animeToggleCheckbox" type="checkbox" id="animeToggleButton3" style="display: none;">
+                    <label for="animeToggleButton3" class="animeToggleButton"></label>
+                </div>
+            </div>
+
+            <div class="card-wrapper">
+                <div class="img-wrapper">
+                    <img src="../assets/textures/hamburgers/cheese-burger.png">
+                    <h2>ჩიზბურგერი</h2>
+                </div>
+                <div>
+                    <input class="animeToggleCheckbox" type="checkbox" id="animeToggleButton4" style="display: none;">
+                    <label for="animeToggleButton4" class="animeToggleButton"></label>
+                </div>
+            </div>
+
+            <div class="card-wrapper">
+                <div class="img-wrapper">
+                    <img src="../assets/textures/hamburgers/chichen-junior.png">
+                    <h2>ჩიქენ ჯუნიორი</h2>
+                </div>
+                <div>
+                    <input class="animeToggleCheckbox" type="checkbox" id="animeToggleButton5" style="display: none;">
+                    <label for="animeToggleButton5" class="animeToggleButton"></label>
+                </div>
+            </div>
+
+            <div class="card-wrapper">
+                <div class="img-wrapper">
+                    <img src="../assets/textures/hamburgers/chicken-snak.png">
+                    <h2>ჩიქენ სნექი</h2>
+                </div>
+                <div>
+                    <input class="animeToggleCheckbox" type="checkbox" id="animeToggleButton6" style="display: none;">
+                    <label for="animeToggleButton6" class="animeToggleButton"></label>
+                </div>
+            </div>
+
+            <div class="card-wrapper">
+                <div class="img-wrapper">
+                    <img src="../assets/textures/hamburgers/double-big-mac.png">
+                    <h2>ორმაგი ბიგმაკი</h2>
+                </div>
+                <div>
+                    <input class="animeToggleCheckbox" type="checkbox" id="animeToggleButton7" style="display: none;">
+                    <label for="animeToggleButton7" class="animeToggleButton"></label>
+                </div>
+            </div>
+
+            <div class="card-wrapper">
+                <div class="img-wrapper">
+                    <img src="../assets/textures/hamburgers/french-fries.png">
+                    <h2>კარტოფილი ფრი</h2>
+                </div>
+                <div>
+                    <input class="animeToggleCheckbox" type="checkbox" id="animeToggleButton8" style="display: none;">
+                    <label for="animeToggleButton8" class="animeToggleButton"></label>
+                </div>
+            </div>
+
+            <div class="card-wrapper">
+                <div class="img-wrapper">
+                    <img src="../assets/textures/hamburgers/hamburger.png">
+                    <h2>ჰამბურგერი</h2>
+                </div>
+                <div>
+                    <input class="animeToggleCheckbox" type="checkbox" id="animeToggleButton9" style="display: none;">
+                    <label for="animeToggleButton9" class="animeToggleButton"></label>
+                </div>
+            </div>
+
+            <div class="card-wrapper">
+                <div class="img-wrapper">
+                    <img src="../assets/textures/hamburgers/mac-chicken.png">
+                    <h2>მაკ ჩიქენი</h2>
+                </div>
+                <div>
+                    <input class="animeToggleCheckbox" type="checkbox" id="animeToggleButton10" style="display: none;">
+                    <label for="animeToggleButton10" class="animeToggleButton"></label>
+                </div>
+            </div>
+
+            <div class="card-wrapper">
+                <div class="img-wrapper">
+                    <img src="../assets/textures/hamburgers/quarter-pounder-cheese.png">
+                    <h2>Quarter Pounder ყველით</h2>
+                </div>
+                <div>
+                    <input class="animeToggleCheckbox" type="checkbox" id="animeToggleButton11" style="display: none;">
+                    <label for="animeToggleButton11" class="animeToggleButton"></label>
+                </div>
+            </div>
+
+            <div class="card-wrapper">
+                <div class="img-wrapper">
+                    <img src="../assets/textures/hamburgers/quarter-pounder-deluxe-mushrooms.png">
+                    <h2>Quarter Pounderს სოკოთი</h2>
+                </div>
+                <div>
+                    <input class="animeToggleCheckbox" type="checkbox" id="animeToggleButton12" style="display: none;">
+                    <label for="animeToggleButton12" class="animeToggleButton"></label>
+                </div>
+            </div>
+
+            <div class="card-wrapper">
+                <div class="img-wrapper">
+                    <img src="../assets/textures/hamburgers/quarter-pounder.png">
+                    <h2>Quarter Pounder Classic</h2>
+                </div>
+                <div>
+                    <input class="animeToggleCheckbox" type="checkbox" id="animeToggleButton13" style="display: none;">
+                    <label for="animeToggleButton13" class="animeToggleButton"></label>
+                </div>
+            </div>
+
+            <div class="card-wrapper">
+                <div class="img-wrapper">
+                    <img src="../assets/textures/drinks/coca-cola.png">
+                    <h2>კოკა-კოლა</h2>
+                </div>
+                <div>
+                    <input class="animeToggleCheckbox" type="checkbox" id="animeToggleButton14" style="display: none;">
+                    <label for="animeToggleButton14" class="animeToggleButton"></label>
+                </div>
+            </div>
+
+            <div class="card-wrapper">
+                <div class="img-wrapper">
+                    <img src="../assets/textures/drinks/pepsi.png">
+                    <h2>პეპსი</h2>
+                </div>
+                <div>
+                    <input class="animeToggleCheckbox" type="checkbox" id="animeToggleButton15" style="display: none;">
+                    <label for="animeToggleButton15" class="animeToggleButton"></label>
+                </div>
+            </div>
+
+            <div class="card-wrapper">
+                <div class="img-wrapper">
+                    <img src="../assets/textures/drinks/sprite.png">
+                    <h2>სპრაიტი</h2>
+                </div>
+                <div>
+                    <input class="animeToggleCheckbox" type="checkbox" id="animeToggleButton16" style="display: none;">
+                    <label for="animeToggleButton16" class="animeToggleButton"></label>
+                </div>
+            </div>
+
+            <div class="card-wrapper">
+                <button class="finish-order-button">შეუკვეთე</button>
+            </div>
+        </div>
+        <label for="createOwnSandwitchButton" class="order-button-label create-own-burger">
+            <span>ააწყვე სასურველი სენდვიჩი / ბურგერი</span>
+            <input type="checkbox" id="createOwnSandwitchButton">
+        </label>
+        <div class="order-menu create-own-burger-container">
+            <div class="card-wrapper">
+                <div class="img-wrapper">
+                    <img src="../assets/textures/igredients/becon.png">
+                    <h2>ბეკონი</h2>
+                </div>
+                <div>
+                    <input class="animeToggleCheckbox" type="checkbox" id="animeToggleButton_01" style="display: none;">
+                    <label for="animeToggleButton_01" class="animeToggleButton"></label>
+                </div>
+            </div>
+            <div class="card-wrapper">
+                <div class="img-wrapper">
+                    <img src="../assets/textures/igredients/beef.png">
+                    <h2>ხორცი</h2>
+                </div>
+                <div>
+                    <input class="animeToggleCheckbox" type="checkbox" id="animeToggleButton_02" style="display: none;">
+                    <label for="animeToggleButton_02" class="animeToggleButton"></label>
+                </div>
+            </div>
+            <div class="card-wrapper">
+                <div class="img-wrapper">
+                    <img src="../assets/textures/igredients/bread.png">
+                    <h2>პური</h2>
+                </div>
+                <div>
+                    <input class="animeToggleCheckbox" type="checkbox" id="animeToggleButton_03" style="display: none;">
+                    <label for="animeToggleButton_03" class="animeToggleButton"></label>
+                </div>
+            </div>
+            <div class="card-wrapper">
+                <div class="img-wrapper">
+                    <img src="../assets/textures/igredients/bun.png">
+                    <h2>ფუნთუშა</h2>
+                </div>
+                <div>
+                    <input class="animeToggleCheckbox" type="checkbox" id="animeToggleButton_04" style="display: none;">
+                    <label for="animeToggleButton_04" class="animeToggleButton"></label>
+                </div>
+            </div>
+            <div class="card-wrapper">
+                <div class="img-wrapper">
+                    <img src="../assets/textures/igredients/cheese.png">
+                    <h2>ყველი</h2>
+                </div>
+                <div>
+                    <input class="animeToggleCheckbox" type="checkbox" id="animeToggleButton_05" style="display: none;">
+                    <label for="animeToggleButton_05" class="animeToggleButton"></label>
+                </div>
+            </div>
+            <div class="card-wrapper">
+                <div class="img-wrapper">
+                    <img src="../assets/textures/igredients/french-fries.png">
+                    <h2>კარტოფილი ფრი</h2>
+                </div>
+                <div>
+                    <input class="animeToggleCheckbox" type="checkbox" id="animeToggleButton_06" style="display: none;">
+                    <label for="animeToggleButton_06" class="animeToggleButton"></label>
+                </div>
+            </div>
+            <div class="card-wrapper">
+                <div class="img-wrapper">
+                    <img src="../assets/textures/igredients/ham.png">
+                    <h2>ძეხვი</h2>
+                </div>
+                <div>
+                    <input class="animeToggleCheckbox" type="checkbox" id="animeToggleButton_07" style="display: none;">
+                    <label for="animeToggleButton_07" class="animeToggleButton"></label>
+                </div>
+            </div>
+            <div class="card-wrapper">
+                <div class="img-wrapper">
+                    <img src="../assets/textures/igredients/lettuce.png">
+                    <h2>სალათის ფოთოლი</h2>
+                </div>
+                <div>
+                    <input class="animeToggleCheckbox" type="checkbox" id="animeToggleButton_08" style="display: none;">
+                    <label for="animeToggleButton_08" class="animeToggleButton"></label>
+                </div>
+            </div>
+            <div class="card-wrapper">
+                <div class="img-wrapper">
+                    <img src="../assets/textures/igredients/onion.png">
+                    <h2>ხახვი</h2>
+                </div>
+                <div>
+                    <input class="animeToggleCheckbox" type="checkbox" id="animeToggleButton_09" style="display: none;">
+                    <label for="animeToggleButton_09" class="animeToggleButton"></label>
+                </div>
+            </div>
+            <div class="card-wrapper">
+                <div class="img-wrapper">
+                    <img src="../assets/textures/igredients/paprika.png">
+                    <h2>პაპრიკა</h2>
+                </div>
+                <div>
+                    <input class="animeToggleCheckbox" type="checkbox" id="animeToggleButton_10" style="display: none;">
+                    <label for="animeToggleButton_10" class="animeToggleButton"></label>
+                </div>
+            </div>
+            <div class="card-wrapper">
+                <div class="img-wrapper">
+                    <img src="../assets/textures/igredients/pickle.png">
+                    <h2>მჟავე კიტრი</h2>
+                </div>
+                <div>
+                    <input class="animeToggleCheckbox" type="checkbox" id="animeToggleButton_11" style="display: none;">
+                    <label for="animeToggleButton_11" class="animeToggleButton"></label>
+                </div>
+            </div>
+            <div class="card-wrapper">
+                <div class="img-wrapper">
+                    <img src="../assets/textures/igredients/sausage.png">
+                    <h2>სოსისი</h2>
+                </div>
+                <div>
+                    <input class="animeToggleCheckbox" type="checkbox" id="animeToggleButton_12" style="display: none;">
+                    <label for="animeToggleButton_12" class="animeToggleButton"></label>
+                </div>
+            </div>
+            <div class="card-wrapper">
+                <div class="img-wrapper">
+                    <img src="../assets/textures/igredients/tomato.png">
+                    <h2>პომიდორი</h2>
+                </div>
+                <div>
+                    <input class="animeToggleCheckbox" type="checkbox" id="animeToggleButton_13" style="display: none;">
+                    <label for="animeToggleButton_13" class="animeToggleButton"></label>
+                </div>
+            </div>
+            <div class="card-wrapper">
+                <div class="img-wrapper">
+                    <img src="../assets/textures/drinks/coca-cola.png">
+                    <h2>კოკა-კოლა</h2>
+                </div>
+                <div>
+                    <input class="animeToggleCheckbox" type="checkbox" id="animeToggleButton_14" style="display: none;">
+                    <label for="animeToggleButton_14" class="animeToggleButton"></label>
+                </div>
+            </div>
+
+            <div class="card-wrapper">
+                <div class="img-wrapper">
+                    <img src="../assets/textures/drinks/pepsi.png">
+                    <h2>პეპსი</h2>
+                </div>
+                <div>
+                    <input class="animeToggleCheckbox" type="checkbox" id="animeToggleButton_15" style="display: none;">
+                    <label for="animeToggleButton_15" class="animeToggleButton"></label>
+                </div>
+            </div>
+
+            <div class="card-wrapper">
+                <div class="img-wrapper">
+                    <img src="../assets/textures/drinks/sprite.png">
+                    <h2>სპრაიტი</h2>
+                </div>
+                <div>
+                    <input class="animeToggleCheckbox" type="checkbox" id="animeToggleButton_16" style="display: none;">
+                    <label for="animeToggleButton_16" class="animeToggleButton"></label>
+                </div>
+            </div>
+            <div class="card-wrapper">
+                <button class="finish-order-button">შეუკვეთე</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

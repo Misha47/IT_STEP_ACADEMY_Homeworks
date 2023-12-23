@@ -1,0 +1,74 @@
+body{
+    margin: auto;
+}
+#root-div{
+    width: 100%;
+    height: 570px;
+    background-image: linear-gradient(to right, rgb(45, 50, 79), rgb(219, 219, 248));    
+
+}
+
+.web-title{
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    font-size: 4rem;
+    transform: translate(-50%, -50%);
+    text-shadow: 0 0 10px rgb(115, 150, 193);
+
+}
+
+.table-wrapper{
+    width: 80%;
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main-table{
+    box-shadow: 0 0 10px rgb(81, 81, 81);
+    background-color: rgb(118, 124, 158);
+    border: 1px solid black;
+}
+
+.thead-item-th{
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgb(47, 56, 104);
+    color: rgba(255, 255, 255, 0.632);
+    text-shadow: 0 0 3px black;
+    text-align: center;
+}
+
+.tbody-item-td{
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-right: 1px solid black;
+    text-align: center;
+}
+.tbody-item-td:nth-last-child(1){
+    border-right: none;
+}
+
+
+
+table, thead, tr, th, td, tbody {
+    border-collapse: collapse;
+}
+
+.footer-wrapper{
+    position: absolute;
+    bottom: 0;
+    height: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: rgb(80, 85, 112);
+    color: white;
+}

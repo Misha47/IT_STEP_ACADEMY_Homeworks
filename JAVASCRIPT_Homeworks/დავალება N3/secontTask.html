@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <pre class="string-pre" id="stringTitle"></pre>
+    <button class="button" id="ResetButton" style="width: 100%;margin-bottom: 10px;">განახლება</button>
+    <div style="display: flex;">
+        <div  style="padding: 10px;box-shadow: 0 0 5px rgba(0, 0, 0, 0.486)">
+            <div style="display: grid; grid-template-columns: 1fr;">
+                <div class="TaskWrapper secondTask smallTask">
+                    <div class="button-wrapper" style="margin-bottom: 5px;">
+                        <button class="button" id="middleWordButton">შუა სიტყვა</button>
+                        <button class="button" id="createArrayButton">მასივის შექმნა სიტყვისგან</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="TaskWrapper secondTask smallTask">
+                    <button class="button" id="upperCaseButton" style="width: 100%;margin-bottom: 5px;">აქციე მაღალი რეგისტრის ასოებად</button>
+            </div>
+    
+            <div class="TaskWrapper secondTask smallTask">
+                    <button class="button" id="trimSpaceButton" style="width: 100%;margin-bottom: 5px;">სიცარიელის მოჭრა მარჯვნიდან/მარცხნიდან</button>
+            </div>
+        </div>
+    
+    
+        <div style="padding: 10px;box-shadow: 0 0 5px rgba(0, 0, 0, 0.486)">
+            <div style="display: grid; grid-template-columns: 1fr 1fr;">
+        
+                <div class="TaskWrapper secondTask">
+                    <div class="buttonWithInputWrapper">
+                        <input id="fromInput" placeholder="ჩასანაცვლებელი სიტყვა">
+                        <input id="toInput" placeholder="ჩამნაცვლებელი სიტყვა">
+                        <button class="button" id="replaceButton">ჩაანაცვლე სიტყვა</button>
+                    </div>
+                </div>
+                
+                <div class="TaskWrapper secondTask">
+                    <div class="buttonWithInputWrapper">
+                        <h2 class="message" id="includesOrNot"></h2>
+                        <input id="inputIncludesOrNot" placeholder="ჩაწერე სიტყვა">
+                        <button class="button" id="ifIncludesButton">შეამოწმე თუ შეიცავს სიმბოლოებს</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    
+        <div style="padding: 10px;box-shadow: 0 0 5px rgba(0, 0, 0, 0.486)">
+            <div class="TaskWrapper secondTask">
+                <h2>იპოვე წინადადების პირველი ასო / სიმბოლო</h2>
+                <h3 id="firstLetterMessage"></h3>
+                <div class="buttonWithInputWrapper">
+                    <input id="firstLetterInput" placeholder="ჩაწერე ასო / სიმბოლო">
+                    <button class="button" id="firstLetterButton">იპოვე პირველი სიმბოლო / ასო</button>
+    
+                </div>
+            </div>
+            
+    
+            
+        </div>
+    </div>
+    <a class="link-button" href="./thirdTask.html" target="_blank">დავალების შემდეგი ნაწილი</a>
+    <script src="./secondTask.js"></script>
+</body>
+</html>

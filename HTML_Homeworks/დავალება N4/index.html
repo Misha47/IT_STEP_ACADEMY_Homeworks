@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>დავალება N4</title>
+     <link rel="stylesheet" href="./styles/navbar.css">
+     <link rel="stylesheet" href="./styles/footer.css">
+     <link rel="stylesheet" href="./styles/Form.css">
+</head>
+<body style="margin: 0;">
+    <style>
+        @font-face {
+            font-family: avengers;
+            src: url(./Fonts/AVENGEANCE\ MIGHTIEST\ AVENGER.ttf) format('truetype');
+        }
+        @font-face {
+            font-family: alkdots;
+            src: url(./Fonts/bpg-banner-quadrosquare-caps-webfont.ttf);
+        }
+
+        @keyframes opacitian {
+            from{
+                opacity: 0;
+            }
+            to{
+                opacity: 1;
+            }
+        }
+    </style>
+    <header class="header-navbar">
+        <nav class="nav-bar">
+            <h1 style="margin-right: 40px;margin-left: 10px;color: white;text-shadow: 0 0 10px gold;">დავალება N4</h1>
+            <input placeholder="მოძებნე სასურველი პროდუქტი" class="input-navbar">
+            <button class="submit-btn">🔍</button>
+            <ul style="margin: 0;display: flex;">
+                <li class="nav-link"><a class="inner-nav-link" href="./index.html">მთავარი</a></li>
+                <li class="nav-link"><a class="inner-nav-link" href="./Contact.html">კონტაქტი</a></li>
+            </ul>
+        </nav>
+    </header>
+    <form class="web-form" action="https://api.everrest.educata.dev/echo/json" method="post">
+        <div class="data-wrapper">
+            <input class="form-item input-item" name="firstName" required="required" id="firstName">
+            <label class="form-item label-item" for="firstName">სახელი</label>
+        </div>
+        <div class="data-wrapper">
+            <input class="form-item input-item" name="lastName" required="required" id="lastName">
+            <label class="form-item label-item" for="lastName">გვარი</label>
+        </div>
+        <div class="data-wrapper">
+            <input class="form-item input-item" name="address" required="required" id="address">
+            <label class="form-item label-item" for="address">მისამართი</label>
+        </div>
+        <div class="data-wrapper">
+            <input class="form-item input-item" name="email" required="required" id="email">
+            <label class="form-item label-item" for="email">ელ-ფოსტა</label>
+        </div>
+        <div class="sex-wrapper">
+            <label class="form-item">სქესი</label>
+            <input type="radio" name="sex-selector" id="male" value="male">
+            <label class="sex-selector" for="male">მამრობითი</label>
+            <input type="radio" name="sex-selector" id="female" value="female">
+            <label class="sex-selector" for="female">მდედრობითი</label>
+        </div>
+        <label for="accordion" class="accordion-label">აირჩიე პროფესია</label>
+        <div class="vacancy-wrapper">
+            <input type="checkbox" class="vacancy-accordion" id="accordion">
+            <div class="vacancy-selector">
+                <input type="checkbox" name="profession" value="Front-End Developer">
+                <label>Front-end Developer</label>
+                <input type="checkbox" name="profession" value="Back-End Developer">
+                <label>Back-end Developer</label>
+                <input type="checkbox" name="profession" value="IOS Developer">
+                <label>IOS Developer</label>
+                <input type="checkbox" name="profession" value="Linux System Admin">
+                <label>Linux System Administrator</label>
+            </div>
+        </div>
+        <div class="additional-wrapper">
+            <label class="additional-label" for="additional-accordion">დამატებითი ინფორმაცია(არასავალდებულო)</label>
+            <input class="additional-input" type="checkbox" style="display: none;" id="additional-accordion">
+            <textarea class="additional-textarea" name="Additional Info"></textarea>
+        </div>
+        <input class="submit-form" type="submit" value="გაგზავნა">
+    </form>
+    <label class="register-title">რეგისტრაცია</label>
+    <footer class="web-footer">Copyright © Misha Toroshelidze</footer>
+</body>
+</html>

@@ -1,0 +1,50 @@
+.film-theater-commercial-section{
+    position: relative;
+    width: 100%;
+    height: 1100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+.film-theater-commercial-section > img{
+    display: none;
+}
+.film-wrap{
+    transition: 0.4s;
+}
+.film-wrap:nth-child(2){
+    background-color: var(--secondary-light);
+}
+.film-wrap:nth-child(3){
+    background-color: var(--main-clr);
+}
+.film-wrap:nth-child(4){
+    background-color: var(--secondary-dark);
+}
+
+.film-wrap:hover{
+    background-color: var(--wht);
+}
+
+
+@media screen and (max-width: 1169px){
+    .film-theater-commercial-section{
+        height: 800px;
+    }
+    
+    .film-theater-commercial-section > img{
+        display: block;
+        position: absolute;
+        z-index: -1;
+    }
+
+}
+
+
+@media screen and (max-width: 482px){
+    .input{
+        width: 300px;
+    }
+}

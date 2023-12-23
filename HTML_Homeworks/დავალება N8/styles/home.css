@@ -1,0 +1,49 @@
+.beauty-section-container{
+    position: relative;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 90vh;
+}
+
+.beauty-section-container section{
+    margin: auto;
+    width: 95%;
+    height: 100%;
+    scroll-snap-align:start;
+    transform-style: preserve-3d;
+}
+
+.beauty-section-container section:nth-child(1){
+    background: transparent;
+
+}
+.beauty-section-container section:nth-child(2){
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 5vw;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    line-height: 50px;
+    word-spacing: 20px;
+    color: white;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 0.1px;
+}
+.beauty-section-container section:nth-child(2) span:nth-child(1){
+    font-size: 10vw;
+    letter-spacing: -1px;
+    line-height: 20vw;
+}
+.beauty-section-container section:nth-child(3){
+    background-color: rgba(255, 255, 255, 0.807);
+    border-top-left-radius: 5vw;
+    border-top-right-radius: 5vw;
+}
+.beauty-section-container section:nth-child(4){
+    background-color: rgba(255, 255, 255, 0.807);
+    border-bottom-left-radius: 5vw;
+    border-bottom-right-radius: 5vw;
+}
