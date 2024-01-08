@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(17, 17, 29);
+}
+
+.task-wrapper{
+    min-height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: rgb(13, 49, 74);
+    padding: 10px;
+    border-radius: 25px;
+    border: 4px double gold;
+
+}
+
+.text-wrapper{
+    max-width: 450px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    background-color: rgb(12, 87, 137);
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid rgb(80, 255, 203);
+}
+
+
+.msg-wrapper{
+    max-width: 439px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(12, 87, 137);
+    padding: 5px;
+    padding-inline: 10px;
+    color:rgb(10, 35, 51);
+    box-shadow: 0 0 5px inset black;
+    border-radius: 5px;
+}
+.msg-wrapper > p{
+    color: rgb(121, 0, 0);
+}
+.msg-wrapper > h3{
+    color: rgb(0, 62, 0);
+}
+.message{
+    padding: 5px;
+    font-size: large;
+    font-weight: bolder;
+    text-shadow: 0 0 3px rgb(65, 182, 170);
+    inline-size: 439px;
+    text-align: center;
+}
+
+.button-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.taskButton{
+    padding: 10px;
+    padding-inline: 23px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    background-color: rgb(37, 108, 156);
+    transition: 0.4s;
+}
+.taskButton:hover{
+    border: 2px solid gold;
+    background-color: rgb(27, 77, 110);
+    
+}
