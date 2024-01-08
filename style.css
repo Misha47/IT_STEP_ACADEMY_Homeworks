@@ -17,13 +17,19 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 10px;
     align-items: center;
     z-index: 999;
 }
+.main-header > h1{
+    text-align: center;
+}
 
 .nav-links{
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
@@ -76,4 +82,21 @@ body{
 .button:hover{
     background-color: transparent;
     color: black;
+}
+
+@media screen and (max-width: 1024px){
+    .main-header{
+        height: 230px;
+    }
+
+    .homework-wrap{
+        margin-top: 200px;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 648px){
+    .homework-wrap{
+        grid-template-columns: 1fr;
+    }
 }
