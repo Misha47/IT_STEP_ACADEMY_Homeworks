@@ -108,4 +108,8 @@ body{
     .homework-wrap{
         grid-template-columns: 1fr;
     }
+
+    .nav-links > .header-button{
+        font-size: medium;
+    }
 }
